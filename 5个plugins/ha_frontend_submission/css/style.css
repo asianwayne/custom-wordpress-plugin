@@ -1,0 +1,64 @@
+   /* CSS styles for form and inputs */
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      input[type="text"]:invalid,
+      input[type="email"]:invalid,
+      textarea:invalid {
+        border-color: blue;
+      }
+
+      input[type="text"]:valid,
+      input[type="email"]:valid,
+      textarea:valid {
+        border-color: #ccc;
+      }
+
+      /* CSS styles for form validation messages */
+      .error {
+        color: #ff6666;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+
+      .success {
+        color: #4CAF50;
+        font-size: 14px;
+        margin-top: 5px;
+      }

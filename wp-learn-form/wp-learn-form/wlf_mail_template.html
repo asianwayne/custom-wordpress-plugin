@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Submission</title>
+    <style>
+        /* Reset CSS */
+        body, div, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #0077b6;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button a {
+            display: inline-block;
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #0077b6;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>来自网站表单的确认信息</h1>
+        </div>
+        <div class="content">
+            <p>你好,</p>
+            <p>你的网站接收到了一个新的表单联系信息，下面是信息详情：</p>
+            <ul>
+                <li><strong>姓名:</strong> %NAME%</li>
+                <li><strong>邮件:</strong> %EMAIL%</li>
+                <li><strong>手机:</strong> %PHONE%</li>
+                <li><strong>留言时间:</strong> %CREATE_TIME%</li>
+                <li><strong>留言标题:</strong> %TITLE%</li>
+            </ul>
+            <p><strong>留言内容:</strong></p>
+            <p>%MESSAGE%.</p>
+            <div class="button">
+                <a href="%SITE_URL%">点击访问网站</a>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2023 %SITE_DESC% | All rights reserved
+        </div>
+    </div>
+</body>
+</html>

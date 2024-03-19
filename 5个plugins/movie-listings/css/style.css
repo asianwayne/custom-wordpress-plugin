@@ -1,0 +1,35 @@
+.movie-col {
+  width: 33%;
+  float: left;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.movie-col .movie-title {
+  padding-top: 20px;
+  margin: 0;
+}
+.detail_main .movie-col img {
+  display: block;
+  max-width: 200px!important;
+  margin: auto;
+  height: 300px!important;
+}
+.movie-title {
+  text-align: left!important;
+  font-size: 3rem!important;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-con {  
+  flex: 1;  
+}  
+  
+.info-con {  
+  flex: 2;
+  margin-left: 1.5rem;  
+}
+
